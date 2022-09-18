@@ -40,7 +40,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `email`, `password`, `message`) VALUES
-(6, 'f@gmail.com', '6af4171607383aff80bd2c4f137e0ce2', '					hello my name is raja.');
+(1, 'f@gmail.com', 'password', '					hello');
 
 --
 -- Indexes for dumped tables
