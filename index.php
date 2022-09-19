@@ -24,6 +24,12 @@
 	
 
 	include("connection.php");
+	
+	echo '<h1>' . $_SESSION['connection_error'] . '</h1>';
+	
+	if ($_SESSION['connection_error']) {
+		echo '<h1>' . $_SESSION['connection_error_message'] . '</h1>';
+	}
 
 	if(array_key_exists('email', $_POST) OR array_key_exists('password', $_POST)){
 
@@ -240,6 +246,7 @@
 	
 
 	<script src="bootstrap/js/bootstrap.js"></script>
+	<script src="http://code.jquery.com/jquery-1.10.0.min.js"></script>
 	<script type="text/javascript">
 
 		$("#clickLogIn").click(function(){
